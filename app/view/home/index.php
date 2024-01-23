@@ -7,5 +7,6 @@
 </head>
 <body>
     <p>ini adalah halaman Home/Index</p>
+    <p>hehehe</p>
 </body>
 </html>
