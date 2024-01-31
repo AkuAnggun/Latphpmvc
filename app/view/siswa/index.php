@@ -1,13 +1,31 @@
-<h1>Daftar Siswa</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <table class= "siswa">
+        <thead>
+            <tbody>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>                
+            </tr>
+        </thead>
+            </tbody>
+    </table>
 
-<table>
-    <tr>
-        <td>No</td>
-        <td>Nama</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td><?= $data ['nama']?></td>
-    </tr>
-</table>
-
+    <?php
+        foreach ($data['siswa'] as $sis){
+            ?>
+            <tr>
+                <td>1</td>
+                <td><?= $sis['Nama'] ?></td>
+            </tr>
+            <?php
+        }
+    ?>
+</body>
+</html>

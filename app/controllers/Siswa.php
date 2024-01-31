@@ -1,15 +1,13 @@
 <?php
-
-class Siswa extends Controller{
-    public function index(){
-        $data ['nama'] = "ndul";
-        $this->view("templates/header", $data); 
-        $this->view("templates/footer", $data); 
-        $this->view("siswa/index", $data);
-    }
-
-    public function biodata(){
-        echo "ini adalah siswa/index";
-    }
-
+    class Siswa extends Controller{
+        public function index()
+        {
+            $data['title'] = 'Data Siswa';
+            $data['siswa'] = $this->model('Siswa_model')->getAllSiswa();
+            // var_dump($data);
+            $this->view("templates/header", $data);
+            $this->view("templates/footer", $data);
+            $this->view("siswa/index", $data);
+        }
 }
+?>
