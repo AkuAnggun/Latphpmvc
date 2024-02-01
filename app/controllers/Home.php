@@ -3,7 +3,7 @@
 class Home extends Controller{
     public function index($nama = "agus", $hobi = "memancing")
     {
-        $data['nama'] = "ndul"; 
+        $data['title'] = "Beranda"; 
         $this->view("templates/header", $data); 
         $this->view("templates/footer", $data); 
         $this->view("home/index", $data);

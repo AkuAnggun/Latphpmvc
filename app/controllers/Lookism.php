@@ -5,8 +5,4 @@ class Lookism extends Controller{
     {
         $this->view("lookism/index");
     }
-
-    // public function login ($nama = "", $hari = ""){
-    //     echo "ini adalah login";
-    // }
 }
